@@ -1,0 +1,339 @@
+
+/* ========================================
+   GENERAL STYLES
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Candara,Calibri,sans-serif;
+    line-height: 1.6;
+    background-color: #33111F;
+}
+
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+
+.navbar {
+    background-color: #33111F;
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar a {
+  color: #FFF7FB;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline dotted;
+}
+
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    margin: 0px 0px 40px 0px;
+    background-color: #ECC5DD
+}
+
+.hero h1 {
+    font-size: 3rem;
+  color: #1E0F15;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+  font-weight: bold;
+  color: #33111F;
+}
+
+.hero-btn {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 12px 24px;
+
+    background-color: #481228;
+    color: #FFF7FB;
+
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.hero-btn:hover {
+    background-color: #80475E;
+}
+
+
+/* ========================================
+   ABOUT SECTION
+   ======================================== */
+
+.about-section {
+    padding: 60px 20px;
+    background-color: #FFF7FB;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 4px solid #1E0F15;
+}
+
+.about-text {
+    flex: 1;
+  font-weight: bold;
+  color: #33111F;
+  
+}
+
+.about-text h2 {
+    font-size: 2rem;
+  color: #33111F;
+}
+
+
+/* ========================================
+   JAVASCRIPT BUTTON
+   ======================================== */
+
+#factButton {
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background-color: #481228;
+    color: #FFF7FB;
+
+    border: none;
+    border-radius: 15px;
+
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#factButton:hover {
+    background-color: #80475E;
+}
+
+/* ========================================
+   LEARNING SECTION
+   ======================================== */
+.learning-section {
+  padding: 60px 20px;
+  margin: 40px 0px;
+  background-color: #FFF7FB;
+  text-align: center;
+}
+
+.learning-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.learning-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #33111f;
+  margin-bottom: 20px;
+}
+
+.learning-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.learning-card {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 3px dotted #80475E;
+  border-radius: 15px;
+}
+
+.learning-card:hover {
+  box-shadow: 0px 5px 10px #481228;
+}
+
+.learning-card h3{
+  color: #481228;
+  font-weight: bold;
+}
+
+.learning-card p {
+  color: #80475E;
+  font-weight: bold;
+}
+
+.current-focus {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.current-focus h3 {
+  color: #6A1A3B;
+}
+
+.current-focus p {
+  color: #80475E;
+  font-weight: bold;
+}
+/* ========================================
+   FAVORITES SECTION
+   ======================================== */
+
+.favorites-section {
+  padding: 60px 20px;
+  background-color: #ECC5DD;
+  text-align: center;
+}
+
+.favorites-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.favorites-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #33111f;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.favorites-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.favorite-item {
+  width: 300px;
+  margin: 15px;
+  padding: 15px;
+  background-color: #FFF7FB;
+  border: 4px solid #80475E;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px #33111F;
+}
+
+.favorite-item h3 {
+  color: #33111f;
+  margin-top: 0px;
+}
+
+.favorite-item img {
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.favorite-item p {
+  color: #481228;
+  font-weight: bold;
+}
+
+/* ========================================
+   PROJECTS SECTION
+   ======================================== */
+
+.projects-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+  font-weight: bold;
+  color: #FFF7FB;
+}
+
+.assignment-buttons {
+    max-width: 900px;
+    margin: 30px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    gap: 15px;
+}
+
+.assignment-buttons a {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background-color: #FFF7FB;
+    color:#481228;
+
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+
+    transition: transform 0.2s;
+}
+
+.assignment-buttons a:hover {
+    transform: translateY(-2px);
+    background-color: #80475E;
+}
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
