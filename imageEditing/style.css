@@ -1,0 +1,420 @@
+
+/* ================================
+   GENERAL STYLES
+================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #290000;
+    background-color: #FFF9F4;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+/* ================================
+   HEADER AND NAVIGATION
+================================ */
+
+.site-header {
+    background-color: #BD1313;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.logo i {
+    margin-right: 0.4rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f4b942;
+}
+
+.nav-links i {
+    margin-right: 0.3rem;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.hero-content p {
+    max-width: 550px;
+	line-height: 1.5;
+	margin-top: 5px;
+}
+
+.eyebrow {
+    color: #BD1313;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+}
+
+.hero-image img {
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.button {
+    display: inline-block;
+
+    padding: 0.8rem 1.3rem;
+    margin-top: 1rem;
+
+    background-color: #BD1313;
+    color: white;
+
+    border: 2px solid #BD1313;
+    border-radius: 6px;
+
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f4b942;
+    border-color: #f4b942;
+    color: #290000;
+}
+
+.button i {
+    margin-left: 0.4rem;
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: #BD1313;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+/* ================================
+   GENERAL SECTIONS
+================================ */
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.section-heading p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ================================
+   IMAGE PROJECTS
+================================ */
+
+.image-project {
+    margin-bottom: 4rem;
+    padding: 2rem;
+
+    background-color: white;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px #290000;
+}
+
+.image-project h3 {
+    margin-bottom: 0.8rem;
+}
+
+.image-project h3 i {
+    margin-right: 0.5rem;
+	
+	font-size: 2rem;
+	color: #BD1313;
+}
+
+.image-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.image-card {
+    overflow: hidden;
+    border: 1px solid #290000;
+    border-radius: 8px;
+    background-color: #FFF9F4;
+}
+
+.image-card h4 {
+    padding: 0.8rem;
+    text-align: center;
+    background-color: #290000;
+    color: white;
+}
+
+.image-card img {
+    height: 280px;
+    object-fit: cover;
+}
+
+
+/* ================================
+   FEATURE CARDS
+================================ */
+
+.features-section {
+    max-width: 1200px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.feature-card {
+    padding: 2rem;
+    text-align: center;
+
+    background-color: white;
+    border: 1px solid #BD1313;
+    border-radius: 12px;
+
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+	box-shadow: 0 3px 10px #290000;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #BD1313;
+
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+
+    border: 3px solid #BD1313;
+    border-radius: 50%;
+	
+}
+
+.feature-icon:hover {
+	color: #f4b942;
+	background-color: #BD1313;
+	box-shadow: 0 3px 10px #290000;
+}
+
+/* ================================
+   ICON SECTION
+================================ */
+
+.icon-section {
+    text-align: center;
+}
+
+
+/* ================================
+   CONTACT SECTION
+================================ */
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact-links a {
+    padding: 0.8rem 1rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+    border-bottom-color: #BD1313;
+    color: #BD1313;
+}
+
+.contact-links i {
+    margin-right: 0.4rem;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 2rem;
+
+    background-color: #BD1313;
+    color: white;
+}
+
+.site-footer p {
+    margin-bottom: 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f4b942;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding-top: 3rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .image-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
